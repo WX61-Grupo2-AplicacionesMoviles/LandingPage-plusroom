@@ -36,8 +36,8 @@ button:hover{
     margin: auto;
 }
 header{
-    background-color: #002C3E;
-    padding: 20px 0;
+    background-color: #05448a;
+    padding: 5px 0;
 }
 header .logo{
     margin: 0;
@@ -53,11 +53,11 @@ header .container{
     padding: 20px 15px;
     position: relative; 
 }
-header img {
+/* header img {
     max-height: 60px; 
-}
+} */
 header .container img{
-    width: 100px;
+    width: 150px;
     margin-top: 10px;
 }
 header nav{
@@ -300,7 +300,7 @@ header nav a:hover {
 
 
 footer{
-    background-color: #002C3E;
+    background-color: #05448a;
 }
 footer p{
     margin: 0;
@@ -411,7 +411,8 @@ quote-text, .download-phrase {
     }
 
     #home h2{
-        font-size: 5em;
+        /* font-size: 4em; */
+        margin-top: 120px;
     }
     #home{
         height: 60vh;
@@ -568,9 +569,9 @@ quote-text, .download-phrase {
         display: none; 
         flex-direction: column; 
         position: absolute; 
-        top: 88px;
+        top: 100px;
         right: 0; 
-        background-color: #002C3E; 
+        background-color: #05448a; 
         width: 100%; 
         z-index: 10; 
     }

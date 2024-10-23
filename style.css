@@ -35,25 +35,30 @@ button:hover{
     max-width: 1400px;
     margin: auto;
 }
-header{
+header {
     background-color: #05448a;
-    padding: 5px 0;
+    padding: 9px 0; 
 }
-header .logo{
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px; 
+    position: relative; 
+}
+
+header .logo {
     margin: 0;
-    padding: 25px 30px;
+    padding: 10px 30px; 
     font-weight: bold;
     color: white;
     font-size: 1.6em;
 }
-header .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 15px;
-    position: relative; 
-}
 
+/* header img {
+    max-height: 60px; 
+} */
 header .container img{
     width: 190px;
     margin-top: 10px;
@@ -96,6 +101,21 @@ header nav a:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
+#home .text h2 {
+    margin-top: 150px; 
+}
+
+@media (max-width: 768px) {
+    #home {
+        height: 70vh; 
+    }
+    
+    #home h2 {
+        margin-top: 150px; 
+        font-size: 1.5em; 
+    }
+}
+
 
 #somos .container{
     text-align: center;
@@ -392,34 +412,48 @@ quote-text, .download-phrase {
 }
 
 @media (min-width: 720px){
-    header .container{
+    header {
+        padding: 10px 0 !important; 
+    }
+
+    header .container {
         flex-direction: row;
         justify-content: space-between;
+        padding: 5px 15px;
     }
-    header nav{
+
+    header .logo {
+        padding: 5px 20px !important; 
+    }
+
+    header nav {
         margin-right: 50px;
         margin-bottom: 0;
     }
-    header .container img{
+
+    header .container img {
         margin: 0;
         margin-left: 20px;
     }
-    #filter{
+
+    #filter {
         height: 60px;
     }
 
-    #home h2{
-        /* font-size: 4em; */
-        margin-top: 120px;
+    #home h2 {
+        margin-top: 120px; 
     }
-    #home{
-        height: 60vh;
+
+    #home {
+        height: 60vh; 
     }
-    #somos .container{
+
+    #somos .container {
         display: flex;
         justify-content: center;
     }
-    #somos .text{
+
+    #somos .text {
         width: 50%;
         max-width: 600px;
         text-align: initial;
@@ -427,44 +461,43 @@ quote-text, .download-phrase {
         display: flex;
         flex-direction: column;
         justify-content: center;
-
     }
-    #somos h2{
+
+    #somos h2 {
         margin-top: 0px;
     }
-    #somos .img-container{
-        background-image: url("images/logo.jpg");
 
+    #somos .img-container {
+        background-image: url("images/logo.jpg");
         background-size: cover;
         background-position: center center;
         height: 300px;
         width: 300px;
     }
 
-    #category .categorias .carta{
+    #category .categorias .carta {
         width: 40%;
     }
-    #category .categorias{
-        display:flex;
+
+    #category .categorias {
+        display: flex;
         justify-content: center;
         flex-wrap: wrap;
     }
-    #category .categorias{
-        display:flex;
-        justify-content: center;
-    }
-    #category p{
+
+    #category p {
         display: block;
         margin-bottom: 30px;
     }
 
-    #category h3{
+    #category h3 {
         margin-top: 0;
-        color:#EBF2FA;
+        color: #EBF2FA;
         font-weight: bold;
         justify-content: center;
     }
-    #category .carta{
+
+    #category .carta {
         padding: 10vw 0vw;
     }
 
@@ -472,18 +505,43 @@ quote-text, .download-phrase {
         flex-direction: row;
         margin: 25px auto;
         width: 100%;
-
     }
-    .card{
+
+    .card {
         max-width: 350px;
     }
 
-    footer .container{
+    footer .container {
         flex-direction: row;
         justify-content: space-evenly;
     }
-   
 }
+
+@media (max-width: 768px) { 
+    header {
+        padding: 5px 0; 
+    }
+
+    header .container {
+        padding: 5px 15px; 
+    }
+
+    header .logo {
+        padding: 0; 
+        font-size: 1.4em; 
+    }
+
+    header nav {
+        margin-right: 0px; 
+        font-size: 0.9em; 
+    }
+
+    header nav a {
+        padding: 5px 10px; 
+    }
+}
+
+
 
 @media (max-width: 768px) {
 
